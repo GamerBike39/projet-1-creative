@@ -1,0 +1,60 @@
+/*
+ couleurs
+rouge: d21242
+blanc1: f5f5f5
+blanc2: f3f3f3
+noir: 1e1e1e
+ */
+
+#akita{   
+    display: flex;
+    font-size: 0.8rem;
+}
+
+#akita> .contentakita{
+
+    flex-direction: column;
+    width: 50%;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.contentakita p,
+.contentakita h2,
+.contentakita2 p,
+.contentakita2 h2{
+    width: 60%;
+    margin-left: 20%;
+    /* margin: 10% 20%; */
+}
+
+.imageakita1{
+    width: 50%;
+    background: url(/assets/img/Layer88.png);
+    background-size: cover;
+}
+
+#akita> .contentakita2{
+
+    flex-direction: column;
+    width: 50%;
+    background-color: #f3f3f3;
+    color: black;
+}
+.imageakita2{
+    flex-direction: row-reverse;
+    width: 50%;
+    background: url(/assets/img/Layer90.png);
+    background-size: cover;
+}
+
+#blog{
+text-align: center;
+
+}
+.bblog{
+
+    width: 50%;
+    background: url(/assets/img/B.png);
+    /* background-size: cover; */
+}
