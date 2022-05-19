@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gotham');
+@import url('http://fonts.cdnfonts.com/css/myriad-pro');
+
+/* font-family: 'Gotham', sans-serif;
+                                                                    font-family: 'Gotham Black', sans-serif;
+                                                                    font-family: 'Gotham Light', sans-serif;
+                                                                    font-family: 'Gotham Thin', sans-serif;
+                                                                    font-family: 'Gotham XLight', sans-serif;
+                                                                    font-family: 'Gotham Book', sans-serif;
+                                                                    font-family: 'Gotham Ultra', sans-serif;
+                                                 */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +19,7 @@
     scroll-behavior: smooth;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -81,6 +95,7 @@ li {
     align-items: center;
     gap: 50px;
     z-index: 2;
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 
@@ -204,35 +219,33 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    display : none;
+    display: none;
     z-index: 52525252;
 }
 
-.burger :nth-child(1){
+.burger :nth-child(1) {
     display: block;
     width: 40px;
     height: 5px;
     background: #f5f5f5;
 }
-.burger :nth-child(2){
+
+.burger :nth-child(2) {
     display: block;
     width: 30px;
     height: 5px;
     background: #f5f5f5;
 }
-.burger :nth-child(3){
+
+.burger :nth-child(3) {
     display: block;
     width: 20px;
     height: 5px;
     background: #f5f5f5;
 }
 
-
-
-
-
-
 /* ************fin menu burger********** */
+
 /* ******* We Are Awesome  ************* */
 
 #awesome {
@@ -262,7 +275,7 @@ li {
     font-size: 247px;
     line-height: 211px;
     font-weight: 900;
-    font-family: "Roboto";
+    font-family: 'Roboto Flex', sans-serif;
     text-align: center;
     user-select: none;
 }
@@ -283,10 +296,14 @@ li {
     width: 70vw;
     height: 30%;
     display: flex;
-    justify-content :center;
+    justify-content: center;
     align-items: center;
+    font-family: 'Gotham Light', sans-serif;
+
+    
 }
-.card h3{
+
+.card h3 {
     width: 80vw;
     text-align: center;
 }
@@ -311,21 +328,77 @@ li {
     justify-content: space-around + center;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
+/* ***********Akita************ */
 
+.akita, .akita2{   
+    height: 45vh;
+    display: flex;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: 'Gotham Light', sans-serif;
+
+}
+
+.akita> .contentakita{
+    width: 50%;
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.akita2{
+    display: flex;
+}
+
+.contentakita p,
+.contentakita h2,
+.contentakita2 p,
+.contentakita2 h2{
+    width: 60%;
+    text-align: left;
+    padding: 5px;
+}
+
+.imageakita1{
+    width: 50%;
+    background: url(/assets/img/Layer88.png) no-repeat center;
+    background-size: cover;
+    background-color: #1e1e1e
+}
+
+.akita2> .contentakita2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f3f3f3;
+    color: black;
+    gap: 10px;
+}
+.imageakita2{
+    width: 100%;
+    height: 100%;
+    background: url(/assets/img/Layer90.png) no-repeat center;
+    background-size: cover;
+    background-color: #f3f3f3;
+}
 /* **********footerTop********** */
 .footerTop {
     width: 100%;
-    min-height: 15vh;
+    min-height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #D21242;
     color: #f5f5f5;
-    padding-bottom: 25px;
-
-
+    font-family: 'Gotham Light', sans-serif;
 }
 
 
@@ -381,7 +454,7 @@ li {
 
 @media screen and (max-width : 1080px) {
 
-    h2 {
+   .title h2 {
         font-size: 8rem;
     }
 }
@@ -391,7 +464,7 @@ li {
         visibility: inherit;
     }
 
-    .burger{
+    .burger {
         display: flex;
     }
 
@@ -402,28 +475,31 @@ li {
 
     .headerTop {
         justify-content: flex-end;
-        
+
     }
 
-    .logo{
+    .logo {
         margin-right: 15px;
     }
 
-    .card1, .card2, .card3, .card4{
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
         padding-right: 5px;
     }
 }
 
 @media screen and (max-width: 925px) {
 
-    
+
 
     /* .WeAre h3{
         font-size: 1.2rem;
     }  */
 
     .card {
-        height : 90%;
+        height: 90%;
         flex-direction: column;
         width: 100vw;
         justify-content: center;
@@ -435,36 +511,88 @@ li {
         width: 50vw;
     }
 
-    .footerTop2{
+    .footerTop2 {
         flex-direction: column;
     }
-    
+
     .footerTop {
         min-height: 80vh;
     }
 
-    .containerFoot{
+    .containerFoot {
         padding-top: 50px;
     }
 
-    .title h2{
+    .title h2 {
         font-size: 50%;
-    } 
+    }
 }
 
-@media screen and (max-width: 730px){
-    .footerTop2{
+@media screen and (max-width: 730px) {
+    .footerTop2 {
         flex-direction: column;
         padding-bottom: 150px;
     }
 
-    #awesome{
+    #awesome {
         height: 150vh;
     }
 
-    .WeAre h3{
+    .WeAre h3 {
         font-size: 18px;
     }
 
-    
+
+}
+
+@media screen and (max-width: 650px)
+{
+.card{
+    padding-bottom: 50px;
+}
+
+
+    .contentakita p,
+.contentakita h2,
+.contentakita2 p,
+.contentakita2 h2{
+    width: 80%;
+    padding: 10px;
+}
+.akita{
+    width: 100%;
+    height: 65vh;
+    flex-direction: column-reverse;
+    background: #1e1e1e;  
+}
+.akita2{
+    width: 100%;
+    height: 65vh;
+    flex-direction: column;
+    background: #F3F3F3;
+}
+.akita > .contentakita{
+    width: 100%;
+}
+.akita > .contentakita p:nth-child(2){
+    padding-bottom: 15px;
+}
+
+.akita >.imageakita1{
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    background-size: cover;
+  
+}
+.akita2 > .contentakita2{
+    width: 100%;
+}
+
+.imageakita2{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
 }
