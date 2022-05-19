@@ -1,60 +1,98 @@
-/*
- couleurs
-rouge: d21242
-blanc1: f5f5f5
-blanc2: f3f3f3
-noir: 1e1e1e
- */
 
-#akita{   
+@import url('http://fonts.cdnfonts.com/css/gotham');
+@import url('http://fonts.cdnfonts.com/css/roboto');
+@import url('http://fonts.cdnfonts.com/css/myriad-pro');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#blog {
+    width: 100%;
+    text-align: center;
     display: flex;
-    font-size: 0.8rem;
-}
-
-#akita> .contentakita{
-
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    width: 50%;
-    background-color: #1e1e1e;
-    color: white;
-}
-
-.contentakita p,
-.contentakita h2,
-.contentakita2 p,
-.contentakita2 h2{
-    width: 60%;
-    margin-left: 20%;
-    /* margin: 10% 20%; */
-}
-
-.imageakita1{
-    width: 50%;
-    background: url(/assets/img/Layer88.png);
-    background-size: cover;
-}
-
-#akita> .contentakita2{
-
-    flex-direction: column;
-    width: 50%;
-    background-color: #f3f3f3;
-    color: black;
-}
-.imageakita2{
-    flex-direction: row-reverse;
-    width: 50%;
-    background: url(/assets/img/Layer90.png);
-    background-size: cover;
-}
-
-#blog{
-text-align: center;
+    min-height: 130vh;
 
 }
-.bblog{
 
-    width: 50%;
-    background: url(/assets/img/B.png);
-    /* background-size: cover; */
+.letsbloglogo {
+
+    width: 100%;
+    position: relative;
+    font-size: 1.2em;
+    margin-top: 5%;
+
 }
+
+.letsbloglogo::before {
+
+    line-height: 210px;
+    color: #d21242;
+    font-weight: 900;
+    font-family: "Roboto";
+
+    content: "B";
+    position: absolute;
+    font-size: 10em;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    top: -93px;
+    z-index: -1;
+}
+
+
+
+.blogh2 {
+    color: #222222;
+    font-family: "Gotham";
+    padding: 2em;
+    font-size: 1.5em;
+}
+.blogh2 p{
+    padding: 2em;
+}
+.cardblog {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cardblog h3 {
+    color: #d21242;
+    padding-top: 10%;
+}
+
+.cardblog p {
+
+    padding: 10%;
+    width: 80%;
+    font-family: "Gotham";
+
+}
+
+.cardblog img {
+    width: 90%;
+
+}
+
+@media screen and (max-width: 1050px) {
+
+    /* rien ! */
+
+}
+
+@media screen and (max-width: 730px) {
+.letsbloglogo{
+    margin-top: 0%;
+}
+}
+/* 1080 925 730 650 
