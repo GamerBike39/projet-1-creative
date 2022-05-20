@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 @import url('http://fonts.cdnfonts.com/css/gotham');
 @import url('http://fonts.cdnfonts.com/css/myriad-pro');
+@import url('http://fonts.cdnfonts.com/css/roboto');
 
 /* font-family: 'Gotham', sans-serif;
-                                                                    font-family: 'Gotham Black', sans-serif;
-                                                                    font-family: 'Gotham Light', sans-serif;
-                                                                    font-family: 'Gotham Thin', sans-serif;
-                                                                    font-family: 'Gotham XLight', sans-serif;
-                                                                    font-family: 'Gotham Book', sans-serif;
-                                                                    font-family: 'Gotham Ultra', sans-serif;
-                                                 */
+font-family: 'Gotham Black', sans-serif
+font-family: 'Gotham Light', sans-serif;
+font-family: 'Gotham Thin', sans-serif;
+font-family: 'Gotham XLight', sans-serif;
+font-family: 'Gotham Book', sans-serif;
+font-family: 'Gotham Ultra', sans-serif;
+  */
 
 
 * {
@@ -155,7 +156,7 @@ li {
     filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
-/* ************************************************ */
+/* **********************  titre  ************************** */
 .title {
     width: 100%;
     min-height: 100vh;
@@ -325,7 +326,7 @@ li {
     width: 30%;
     height: 100%;
     display: flex;
-    justify-content: space-around + center;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -389,6 +390,84 @@ li {
     background-size: cover;
     background-color: #f3f3f3;
 }
+
+/* ********blog******** */
+#blog {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 130vh;
+
+
+}
+
+.letsbloglogo {
+
+    width: 100%;
+    position: relative;
+    font-size: 1.2em;
+    margin-top: 5%;
+
+}
+
+.letsbloglogo::before {
+
+    line-height: 210px;
+    color: #d21242;
+    font-weight: 900;
+    font-family: "Roboto";
+
+    content: "B";
+    position: absolute;
+    font-size: 10em;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    top: -93px;
+    z-index: -1;
+}
+
+
+
+.blogh2 {
+    color: #222222;
+    font-family: "Gotham";
+    padding: 2em;
+    font-size: 1.5em;
+}
+.blogh2 p{
+    padding: 2em;
+}
+.cardblog {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.cardblog h3 {
+    color: #d21242;
+    padding-top: 10%;
+}
+
+.cardblog p {
+
+    padding: 10%;
+    /* width: 80%; */
+    font-family: "Gotham";
+
+}
+
+.cardblog img {
+    width: content;
+
+}
+
 /* **********footerTop********** */
 .footerTop {
     width: 100%;
@@ -452,6 +531,20 @@ li {
 
 /* media querry  */
 
+@media screen and (max-width : 1450px) {
+    .cardblog {
+        width: 80%;
+        flex-direction: column;
+    }
+    #blog{
+        height: 300vh;
+    }
+
+    #blog img{
+        width: 30%;
+    }
+
+}
 @media screen and (max-width : 1080px) {
 
    .title h2 {
@@ -488,23 +581,30 @@ li {
     .card4 {
         padding-right: 5px;
     }
+    #blog{
+        height: 300vh;
+    }
+
 }
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 930px) {
 
+    #awesome {
+        height: 150vh;
+    }
 
-
-    /* .WeAre h3{
+    .WeAre h3{
         font-size: 1.2rem;
-    }  */
+    } 
 
     .card {
-        height: 90%;
+        height: 100%;
         flex-direction: column;
         width: 100vw;
         justify-content: center;
         align-items: center;
         gap: 50px;
+        padding-bottom: 25px;
     }
 
     .card p {
@@ -526,6 +626,11 @@ li {
     .title h2 {
         font-size: 50%;
     }
+
+    #blog{
+        height: 300vh;
+    }
+
 }
 
 @media screen and (max-width: 730px) {
@@ -535,11 +640,17 @@ li {
     }
 
     #awesome {
-        height: 150vh;
+        height: 170vh;
     }
 
     .WeAre h3 {
-        font-size: 18px;
+        font-size: 1.1rem;
+    }
+    .WeAre h2 {
+        font-size: 10rem;
+    }
+    #blog{
+        height: 300vh;
     }
 
 
@@ -593,6 +704,10 @@ li {
     width: 100%;
     height: 100%;
     background-size: cover;
+}
+
+#blog{
+    height: 300vh;
 }
 
 }
