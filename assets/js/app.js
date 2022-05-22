@@ -1,20 +1,7 @@
-const burger = document.querySelector(".burger");
-const burgerMenu = document.querySelector(".burgerMenu");
-const easterEggs = document.querySelector(".title2");
-const scroll = (window.location.hash = "awesome");
+// const easterEggs = document.querySelector("#spell");
+// const body = document.querySelector("body");
 
-function toggleMenu() {
-  burger.addEventListener("click", () => {
-    burger.classList.toggle("showMenu");
-  });
-}
-toggleMenu();
-
-// EasterEggs title
-
-function ahah() {
-  easterEggs.addEventListener("click", () => {
-    easterEggs.classList.toggle("animate__hinge");
-  });
-}
-ahah();
+// setTimeout(() => {
+//   easterEggs.style.display = "none";
+//   body.style.display = "block";
+// }, 3000);
