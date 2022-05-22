@@ -1,7 +1,9 @@
-// const easterEggs = document.querySelector("#spell");
-// const body = document.querySelector("body");
+const easterEggs = document.querySelector("#loader");
+const opac = document.querySelector("#home");
 
-// setTimeout(() => {
-//   easterEggs.style.display = "none";
-//   body.style.display = "block";
-// }, 3000);
+setTimeout(() => {
+  easterEggs.style.display = "none";
+}, 2000);
+setTimeout(() => {
+  opac.style.opacity = "1";
+}, 2300);

@@ -1,7 +1,7 @@
 
 /* effets spéciaux */
 
-
+/*  */
 
 @import url('http://fonts.cdnfonts.com/css/gotham');
 @import url('http://fonts.cdnfonts.com/css/myriad-pro');
@@ -152,7 +152,7 @@ nav {
     cursor: pointer;
     border: none;
     display: flex;
-    background: #fafafa;
+    background: #fafafa00;
     align-items: center;
     position: relative;
   }
@@ -160,7 +160,7 @@ nav {
     display: block;
     width: 100%;
     height: 2px;
-    background: #333;
+    background: rgb(244, 233, 233);
     position: absolute;
     pointer-events: none;
     transition: opacity 0.3s 0.15s ease-out;
@@ -369,12 +369,26 @@ justify-content: center;
 .cardF p{
     min-height: 5vmax;
     max-width: 20vmax;
-    min-width: 20vmax;
+    min-width: 10vmax;
+    padding: 10px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2vh;
+    text-align: center;
 }
+
+.cardF h3{
+  font-size: 3vh;
+  text-align: center;
+}
+
+.cardF img{
+  min-height: 5vh;
+  min-width: 3vw;
+}
+
 
 /* ********** Akita ********* */
 #akita{
@@ -385,6 +399,7 @@ justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: "gotham";
+    background: #1e1e1e;
 }
 
 
@@ -449,8 +464,13 @@ justify-content: center;
     justify-content: center;
     align-items: center;
 }
-#akita img{
+/* #akita img{
  min-height: 50%;   
+} */
+.imgAkita,
+.imgAkita2{
+  max-width: 50vw;
+  max-height: 67vh;
 }
 
 
@@ -534,6 +554,10 @@ margin-top:10px ;
     flex-direction: column;
     gap: 15px;
     margin: 15px;
+}
+
+.cardB h3{
+  color: #D21242;
 }
 
 .cardB p{
