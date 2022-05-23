@@ -49,6 +49,9 @@
   scroll-behavior: smooth;
 }
 
+hmtl{
+ overflow-x: hidden;
+}
 body{
   overflow-x: hidden;
 }
@@ -78,7 +81,7 @@ nav {
   display: flex;
   align-items: center;
   text-decoration: none;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 .nav-icon span {
@@ -166,14 +169,18 @@ nav {
     order: 2;
   }
 
+  .navlinks-container a::after {
+    bottom: -2px;
+  }
+
   .social{
     order: 2;
     width: 50%;
   }
 
   .social svg{
-    min-width: 6vw;
-    min-height: 6vw;
+    min-width: 10vw;
+    min-height: 4vw;
   }
 
   .nav-icon span {
@@ -251,14 +258,28 @@ nav {
 
 }
 
-/* @media (max-width: 500px) {
-  .nav-icon img {
-    width: 30px;
+@media (max-width: 645px) {
+  .social svg{
+    min-width: 10vw;
+    min-height: 5vw;
   }
-  .nav-icon span {
-    font-size: 20px;
+}
+@media (max-width: 445px) {
+  .social svg{
+    min-height: 7vw;
   }
-} */
+}
+@media (max-width: 445px) {
+  .social svg{
+    min-height: 7vw;
+  }
+}
+@media (max-width: 370px) {
+  .social svg{
+    min-width: 10vw;
+    min-height: 8vw;
+  }
+}
 
 /* ********************* header ******************* */
 
@@ -565,7 +586,6 @@ margin-top:10px ;
     font-size: 8em;
     opacity: 80%;
     z-index: -2;
-   /* padding-top: 50px; */
 }
 
 .cardblog{
@@ -581,7 +601,7 @@ margin-top:10px ;
 .cardB{
     text-align: center;
     min-height: 20vmax;
-    max-height: 45vmax;
+    max-height: 60vmax;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -689,7 +709,7 @@ margin-top:10px ;
     }
 
     #akita img{
-      max-width: 50vh;
+      max-width: 80vw;
       padding-bottom: 25px;
     }
     .akita{
@@ -720,12 +740,14 @@ margin-top:10px ;
 
 }
 
+@media screen and (max-width: 470px){
 
-@media  screen and (max-width: 428px){
-#akita img{
-  max-width: 30vh;
 
 }
+@media screen and (max-width: 470px){
+  .containerFoot{
+    width: 100vw;
+  }
 }
 
 
