@@ -19,8 +19,6 @@ new ResizeObserver((entries) => {
   if (entries[0].contentRect.width <= 900) {
     navLinksContainer.style.transition = "transform 0.3s ease-out";
     navLinksContainer.style.background = "rgb(28,24,26)";
-    navLinksContainer.style.background =
-      "linear-gradient(90deg, rgba(28,24,26,1) 0%, rgba(78,70,70,1) 57%, rgba(46,48,52,1) 76%, rgba(113,106,101,1) 100%);";
   } else {
     navLinksContainer.style.transition = "none";
     navLinksContainer.style.background = "";
@@ -39,30 +37,24 @@ window.addEventListener("scroll", function hover() {
   //connaitre la position du scroll
 
   if (scrollTop > lastScrollTop) {
-    navbar.style.display = "none";
+    navbar.style.top = "-20%";
   } else {
-    navbar.style.display = "flex";
-  }
-
-  if (scrollTop < lastScrollTop) {
-    navbar.style.background = "rgb(28,24,26,70)";
-    navbar.style.background = "#1E1E1E";
-  } else {
-    navbar.style.background = "transparent";
+    navbar.style.top = "0";
+    navbar.style.backdropFilter = "blur(5px)";
   }
 
   lastScrollTop = scrollTop; // sauve la dernière position
 });
 
-function voirNav(e) {
-  console.log("clientX :", e.clientX, "clientY :", e.clientY);
-  if ((e.clientY = 90) || e.clientX < 150) {
-    navbar.style.display = "flex";
-    navbar.style.background = "#1E1E1E";
-  }
-  if (e.clientY >= 92 && e.clientX >= 200) {
-    navbar.style.display = "none";
-  }
-}
+// function voirNav(e) {
+//   // console.log("clientX :", e.clientX, "clientY :", e.clientY);
+//   if ((e.clientY = 90) || e.clientX < 150) {
+//     navbar.style.display = "flex";
+//     navbar.style.backdropFilter = "blur(5px)";
+//   }
+//   if (e.clientY >= 92 && e.clientX >= 200) {
+//     navbar.style.display = "none";
+//   }
+// }
 
-const mouse = window.addEventListener("mousemove", voirNav);
+// const mouse = window.addEventListener("mousemove", voirNav);
