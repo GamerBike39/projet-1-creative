@@ -654,8 +654,7 @@
 });
 
 AOS.init({
-  offset: 200,
-  duration: 800,
+  offset: 50,
+  duration: 500,
   easing: "ease-out-cubic",
-  delay: 150,
 });
