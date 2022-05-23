@@ -37,9 +37,9 @@ window.addEventListener("scroll", function hover() {
   //connaitre la position du scroll
 
   if (scrollTop > lastScrollTop) {
-    navbar.style.top = "-20%";
+    navbar.style.opacity = "0%";
   } else {
-    navbar.style.top = "0";
+    navbar.style.opacity = "100%";
     navbar.style.backdropFilter = "blur(5px)";
   }
 
